@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/onycom_web/static/css/main.be1389d5.css",
+    "main.js": "/onycom_web/static/js/main.e8b929db.js",
+    "static/js/453.ddc3a1b1.chunk.js": "/onycom_web/static/js/453.ddc3a1b1.chunk.js",
+    "static/media/onycom_video.gif": "/onycom_web/static/media/onycom_video.74a929b0d75c3bc10bc9.gif",
+    "static/media/slide02-5.jpeg": "/onycom_web/static/media/slide02-5.dfa8c82a69019be0f341.jpeg",
+    "static/media/bd3.jpeg": "/onycom_web/static/media/bd3.b782cb0a4cccbe54f4d7.jpeg",
+    "static/media/slide04-3.jpeg": "/onycom_web/static/media/slide04-3.ce94112b3003cd8bc6a8.jpeg",
+    "static/media/sqa1.jpeg": "/onycom_web/static/media/sqa1.413d4793fe65e93a0071.jpeg",
+    "static/media/testing1.jpeg": "/onycom_web/static/media/testing1.b21f6631162cae8915ac.jpeg",
+    "static/media/esg-safety.png": "/onycom_web/static/media/esg-safety.ed03fa275367e6fa9b9d.png",
+    "static/media/slide03-2.jpeg": "/onycom_web/static/media/slide03-2.942eed7c7b3af406cc8b.jpeg",
+    "static/media/esg-management.png": "/onycom_web/static/media/esg-management.16ee1b10086a9c786e94.png",
+    "static/media/esg-eco.png": "/onycom_web/static/media/esg-eco.790470b443a3887f84f8.png",
+    "static/media/slide01-3-4.jpg": "/onycom_web/static/media/slide01-3-4.3e7f14c672bed4d198a7.jpg",
+    "static/media/woowa-bros.png": "/onycom_web/static/media/woowa-bros.738ae2dc36c2f45aed2e.png",
+    "static/media/samsung-electronics.png": "/onycom_web/static/media/samsung-electronics.173386a4611af821e3db.png",
+    "static/media/en.png": "/onycom_web/static/media/en.87e7fd1c84c38c7c1da6.png",
+    "static/media/ko.png": "/onycom_web/static/media/ko.317bef9e64347e7199e9.png",
+    "static/media/ja.png": "/onycom_web/static/media/ja.7678e4c2e57148725b56.png",
+    "static/media/yeogi.png": "/onycom_web/static/media/yeogi.1c9b86d71ee69746caf0.png",
+    "static/media/kurly.png": "/onycom_web/static/media/kurly.1599b3f52a3d903b53a2.png",
+    "static/media/testReport-icon.png": "/onycom_web/static/media/testReport-icon.452b0e32337391d3ccbe.png",
+    "static/media/kakao.svg": "/onycom_web/static/media/kakao.1d6d15e3ef7c0383c40f65ba3925bf0f.svg",
+    "static/media/hanwhavision.svg": "/onycom_web/static/media/hanwhavision.8a32af098eeefc9f033c14241eb15008.svg",
+    "static/media/smilegate.svg": "/onycom_web/static/media/smilegate.fcb8b6d3a326039a175f39c8c4ac311f.svg",
+    "static/media/socar.svg": "/onycom_web/static/media/socar.a0fc41ccc3016ccd72b0ca3261a58de4.svg",
+    "index.html": "/onycom_web/index.html",
+    "main.be1389d5.css.map": "/onycom_web/static/css/main.be1389d5.css.map",
+    "main.e8b929db.js.map": "/onycom_web/static/js/main.e8b929db.js.map",
+    "453.ddc3a1b1.chunk.js.map": "/onycom_web/static/js/453.ddc3a1b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be1389d5.css",
+    "static/js/main.e8b929db.js"
+  ]
+}
