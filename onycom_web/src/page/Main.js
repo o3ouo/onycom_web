@@ -10,10 +10,12 @@ import CustomerStories from "../components/CustomerStories";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import testReport from "../images/testReport-icon.png";
-import monitoring from "../images/monitoring-icon.png";
-import testforte from "../images/testforte-icon.png";
-import bigData from "../images/bigData-icon.png";
+import { ClipboardList } from "lucide-react";
+import { MonitorCog } from "lucide-react";
+import { Cog } from "lucide-react";
+import { BrainCircuit } from "lucide-react";
+import { MoveRight } from "lucide-react";
+
 import esgManagement from "../images/esg-management.png";
 import esgEco from "../images/esg-eco.png";
 import esgSafety from "../images/esg-safety.png";
@@ -21,10 +23,30 @@ import esgSafety from "../images/esg-safety.png";
 import onycomVideo from "../video/onycom_video.gif";
 
 const mainMenu = [
-  { title: "시험성적서", btnTxt: "발급받기", icon: testReport },
-  { title: "웹/앱 성능 모니터링", btnTxt: "체험하기", icon: monitoring },
-  { title: "웹/앱 테스트 자동화", btnTxt: "체험하기", icon: testforte },
-  { title: "빅데이터", btnTxt: "분석받기", icon: bigData },
+  {
+    title: "시험성적서",
+    btnTxt: "발급받기",
+    icon: <ClipboardList size={48} />,
+    name: "icon",
+  },
+  {
+    title: "웹/앱 성능 모니터링",
+    btnTxt: "체험하기",
+    icon: <MonitorCog size={48} />,
+    name: "icon",
+  },
+  {
+    title: "웹/앱 테스트 자동화",
+    btnTxt: "체험하기",
+    icon: <Cog size={48} />,
+    name: "icon",
+  },
+  {
+    title: "빅데이터",
+    btnTxt: "분석받기",
+    icon: <BrainCircuit size={48} />,
+    name: "icon rotate",
+  },
 ];
 
 const NewsBox = ({ att, title, text, btnName }) => {
@@ -82,38 +104,21 @@ function Main() {
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide-bg"></div>
-              <div className="slide-txt">
-                <h4>테스트부터 토탈 인티그레이션까지</h4>
-                <p>
-                  고객 맞춤형 QA 컨설팅과 최적화된 시스템 구축으로 안정적인 성장
-                  파트너가 되어드립니다.
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="slide-bg"></div>
-              <div className="slide-txt">
-                <h4>글로벌 시장을 여는 통로</h4>
-                <p>
-                  ICT 솔루션 수출·현지화·유통까지. 현지 시장의 성공 파트너가
-                  되어드립니다.
-                </p>
-              </div>
-            </SwiperSlide>
           </Swiper>
           <div className="main-menu">
             {mainMenu.map((menu, index) => (
-              <Link to={menu.url} key={index} className="menu-box">
-                <div className="title-box">
-                  <figure>
-                    <img src={menu.icon} alt={menu.title} />
-                  </figure>
-                  <p>{menu.title}</p>
-                </div>
-                <button type="button">{menu.btnTxt}</button>
-              </Link>
+              <div className="menu-inner">
+                <Link to={menu.url} key={index} className="menu-box">
+                  <div className="title-box">
+                    <figure className={menu.name}>{menu.icon}</figure>
+                    <p>{menu.title}</p>
+                  </div>
+                  <div className="button-box">
+                    <button type="button">{menu.btnTxt}</button>
+                    <MoveRight size={20} />
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
         </section>
@@ -147,7 +152,6 @@ function Main() {
                 <p>ISO/IEC25024: Measurement of data quality</p>
                 <button>Read the news →</button>
               </div>
-
               {newsData.map((news, index) => (
                 <NewsBox
                   key={index}

@@ -1,6 +1,6 @@
 export const menuItemsData = [
   {
-    title: "Quality Assurance",
+    title: "품질 보증",
     url: "/",
     submenu: [
       {
@@ -15,7 +15,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Solutions",
+    title: "솔루션",
     url: "/solutions",
     submenu: [
       {
@@ -30,7 +30,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "BigData",
+    title: "빅데이터",
     url: "/bigdata",
     submenu: [
       {
@@ -45,7 +45,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "About",
+    title: "기업정보",
     url: "/about",
     submenu: [
       {
@@ -65,7 +65,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Blog",
+    title: "뉴스룸",
     url: "",
   },
 ];
