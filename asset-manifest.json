@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/onycom_web/static/css/main.fff99dd8.css",
+    "main.css": "/onycom_web/static/css/main.a5f1556a.css",
     "main.js": "/onycom_web/static/js/main.6c8bfa5e.js",
     "static/js/453.ddc3a1b1.chunk.js": "/onycom_web/static/js/453.ddc3a1b1.chunk.js",
     "static/media/slide2.svg": "/onycom_web/static/media/slide2.7bae796219b860e06c78.svg",
@@ -34,12 +34,12 @@
     "index.html": "/onycom_web/index.html",
     "static/media/bg-circle.svg": "/onycom_web/static/media/bg-circle.98f98ce00c6d1717b8d23aec6989b7e9.svg",
     "static/media/certification-bg.svg": "/onycom_web/static/media/certification-bg.433f623837cf2516dcea.svg",
-    "main.fff99dd8.css.map": "/onycom_web/static/css/main.fff99dd8.css.map",
+    "main.a5f1556a.css.map": "/onycom_web/static/css/main.a5f1556a.css.map",
     "main.6c8bfa5e.js.map": "/onycom_web/static/js/main.6c8bfa5e.js.map",
     "453.ddc3a1b1.chunk.js.map": "/onycom_web/static/js/453.ddc3a1b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fff99dd8.css",
+    "static/css/main.a5f1556a.css",
     "static/js/main.6c8bfa5e.js"
   ]
 }
