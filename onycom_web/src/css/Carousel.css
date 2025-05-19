@@ -1,0 +1,51 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button.active {
+  background: #0033cc;
+  color: white;
+  font-weight: bold;
+}
+
+.rolling-content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.content-slide {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

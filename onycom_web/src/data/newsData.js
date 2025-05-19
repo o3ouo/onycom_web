@@ -1,13 +1,20 @@
+import aiImg from "../images/news-ai.svg";
+import education from "../images/news-education.svg";
+
 export const newsData = [
   {
+    img: aiImg,
+    att: "img",
     title: "SW시험센터, 대구 AI반도체 & SaaS 비즈니스 전략 세미나 개최",
     text: ["2025년 2월 20일(목) 14:00~17:00"],
-    btnName: "Go to Events",
+    btnName: "이벤트로 이동하기",
   },
   {
-    title: "어니컴 '영업경쟁력 향상' 교육 실시",
+    img: education,
+    att: "img",
+    title: "어니컴 직무교육을 통해 '영업경쟁력 향상' 교육 실시",
     text: ["가천대학교 경영학부 교수 임진환 강사님"],
-    btnName: "Read the blog",
+    btnName: "뉴스 보러가기",
   },
   {
     att: "Event",
@@ -15,9 +22,8 @@ export const newsData = [
     text: [
       "행사 일정: 2022.4.17(수) ~ 19(금), 10:00 ~ 17:00",
       "행사장: 서울 COEX",
-      "어니컴 부스 위치: AF124 (1층 A홀)",
     ],
-    btnName: "Go to Events",
+    btnName: "이벤트로 이동하기",
   },
   {
     att: "News",
@@ -26,6 +32,6 @@ export const newsData = [
     text: [
       "IMQA는 앞으로도 더 강력한 성능 모니터링과 분석 기능을 제공하기 위해 지속적으로 발전해 나가겠습니다.",
     ],
-    btnName: "Read the news",
+    btnName: "뉴스 보러가기",
   },
 ];

@@ -1,70 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+
+import MainMenu from "../components/MainMenu";
 import InfoContent from "../components/InfoContent";
 import BusinessBox from "../components/BisinessBox";
-import { newsData } from "../data/newsData";
-import CustomerStories from "../components/CustomerStories";
-
+import EmblaCarousel from "../components/EmblaCarousel";
+import News from "../components/News";
+import Esg from "../components/Esg";
+import PartnerCarousel from "../components/PartnerCarousel";
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { ClipboardList } from "lucide-react";
-import { MonitorCog } from "lucide-react";
-import { Cog } from "lucide-react";
-import { BrainCircuit } from "lucide-react";
-import { MoveRight } from "lucide-react";
-
-import esgManagement from "../images/esg-management.png";
-import esgEco from "../images/esg-eco.png";
-import esgSafety from "../images/esg-safety.png";
-
-import onycomVideo from "../video/onycom_video.gif";
-
-const mainMenu = [
-  {
-    title: "시험성적서",
-    btnTxt: "발급받기",
-    icon: <ClipboardList size={48} />,
-    name: "icon",
-  },
-  {
-    title: "웹/앱 성능 모니터링",
-    btnTxt: "체험하기",
-    icon: <MonitorCog size={48} />,
-    name: "icon",
-  },
-  {
-    title: "웹/앱 테스트 자동화",
-    btnTxt: "체험하기",
-    icon: <Cog size={48} />,
-    name: "icon",
-  },
-  {
-    title: "빅데이터",
-    btnTxt: "분석받기",
-    icon: <BrainCircuit size={48} />,
-    name: "icon rotate",
-  },
-];
-
-const NewsBox = ({ att, title, text, btnName }) => {
-  return (
-    <div className={`news-box ${btnName}`}>
-      <div className="img-or-case">{att}</div>
-      <div className="text-box">
-        <h3>{title}</h3>
-        {text.map((txt, index) => (
-          <p className="text" key={index}>
-            {txt}
-          </p>
-        ))}
-        <button className="btn">{btnName} →</button>
-      </div>
-    </div>
-  );
-};
 
 function Main() {
   return (
@@ -105,22 +51,7 @@ function Main() {
               </div>
             </SwiperSlide>
           </Swiper>
-          <div className="main-menu">
-            {mainMenu.map((menu, index) => (
-              <div className="menu-inner">
-                <Link to={menu.url} key={index} className="menu-box">
-                  <div className="title-box">
-                    <figure className={menu.name}>{menu.icon}</figure>
-                    <p>{menu.title}</p>
-                  </div>
-                  <div className="button-box">
-                    <button type="button">{menu.btnTxt}</button>
-                    <MoveRight size={20} />
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+          <MainMenu />
         </section>
 
         <section className="business">
@@ -132,87 +63,33 @@ function Main() {
           </div>
         </section>
 
-        <section className="video-box">
-          <img src={onycomVideo} alt="onycom video" />
-        </section>
+        <div className="info-wrap">
+          <InfoContent />
+        </div>
 
-        <InfoContent />
-
-        <section className="news">
+        <section className="certification">
           <div className="inner">
-            <h2>
-              <span>News & Events</span>
-              Gain insights to fuel your business
-            </h2>
-            <div className="contents">
-              <div className="first-box">
-                <h3>
-                  'KOLAS' 데이터 품질 분야 국제 공인시험기관 자격 인정 획득
-                </h3>
-                <p>ISO/IEC25024: Measurement of data quality</p>
-                <button>Read the news →</button>
-              </div>
-              {newsData.map((news, index) => (
-                <NewsBox
-                  key={index}
-                  title={news.title}
-                  text={news.text}
-                  btnName={news.btnName}
-                  att={news.att}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="esg">
-          <div className="inner">
-            <h2>Environmental, Social & Governance</h2>
-            <div className="contents">
+            <h2>Patent & Certification</h2>
+            <div className="contents-box">
               <div className="text-box">
-                <h3>인간, 환경, 사회의 조화를 통한 미래 사회로의 공헌</h3>
+                <h3>최고의 경험을 제공하기 위해 최선을 다하고 있습니다</h3>
                 <p>
-                  1. 구성원은 높은 윤리관과 준법정신을 바탕으로 업무수행에
-                  있어서 윤리경영을 실천한다.
+                  혁신적인 ICT 융합 솔루션 및 기술력을 바탕으로 국내외 다수의
+                  특허 및 기업 인증을 보유하고 있습니다.
                 </p>
-                <p>
-                  2. 구성원은 회사의 재산 및 정보자산을 본인의 사적인 목적을
-                  위해서 사용하지 아니하며, 본인과 회사의 이해가 상충되는 없무
-                  수행 시 회사 이익을 우선한다.
-                </p>
-                <p>
-                  3. 구성원은 이해관계자로부터의 금품, 향응, 개인적 편의를
-                  수수하지 않는다.
-                </p>
-                <p>
-                  4. 구성원은 준법정신을 바탕으로 모든 상거래에 있어 제반 법규를
-                  준수한다.
-                </p>
-                <p>
-                  5. 회사는 구성원 개개인의 기본권을 존중하며, 임직원 각자를
-                  독립되고 존업함 인격체로서 대한다.
-                </p>
-                <p>
-                  6. 회사는 실력 및 성과에 따른 공정한 평가/보상체계를 통해
-                  근로의욕을 고취한다.
-                </p>
+                <button type="button">자세히 알아보기</button>
               </div>
-              <div className="img-box">
-                <figure>
-                  <img src={esgManagement} alt="ESG 경영 방침" />
-                </figure>
-                <figure>
-                  <img src={esgEco} alt="환경경영 방침" />
-                </figure>
-                <figure>
-                  <img src={esgSafety} alt="안전보건경영 방침" />
-                </figure>
-              </div>
+              {/* <CertifiCarousel /> */}
+              <EmblaCarousel />
             </div>
           </div>
         </section>
 
-        <CustomerStories />
+        <News />
+
+        <Esg />
+
+        <PartnerCarousel />
       </div>
     </div>
   );
